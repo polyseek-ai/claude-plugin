@@ -1,7 +1,7 @@
 {
   "name": "polyseek",
   "displayName": "polyseek",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Executive-search candidate searches in Claude with polyseek: brief the mandate, review and confirm the search plan, run the search, read the ranked and verified candidates, refine them in a second pass and get verified business contacts. German and English. Beta with exclusive early access.",
   "author": {
     "name": "int32 solutions GmbH (polyseek.ai)",
@@ -11,5 +11,14 @@
   "homepage": "https://polyseek.ai",
   "repository": "https://github.com/polyseek-ai/claude-plugin",
   "license": "MIT",
-  "keywords": ["executive search", "recruiting", "candidate search", "talent landscape", "longlist", "headhunting", "Personalberatung"]
+  "privacyPolicyUrl": "https://polyseek.ai/privacy-policy-mcp/",
+  "keywords": [
+    "executive search",
+    "recruiting",
+    "candidate search",
+    "talent landscape",
+    "longlist",
+    "headhunting",
+    "Personalberatung"
+  ]
 }
