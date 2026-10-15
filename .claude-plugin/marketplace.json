@@ -1,0 +1,19 @@
+{
+  "name": "polyseek",
+  "owner": {
+    "name": "int32 solutions GmbH (polyseek.ai)",
+    "email": "office@polyseek.ai"
+  },
+  "metadata": {
+    "description": "The polyseek plugin for Claude: executive-search candidate searches with the polyseek connector."
+  },
+  "plugins": [
+    {
+      "name": "polyseek",
+      "source": "./",
+      "description": "Executive-search candidate searches in Claude with polyseek: briefing, plan, confirmation, run, ranked and verified candidates, second pass and verified contacts. German and English.",
+      "category": "productivity",
+      "homepage": "https://polyseek.ai"
+    }
+  ]
+}
