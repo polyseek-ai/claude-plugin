@@ -22,6 +22,14 @@ The connector also offers company profiles, person profiles, identifying the emp
 /plugin install polyseek --marketplace polyseek-ai/claude-plugin
 ```
 
+## ChatGPT
+
+The same repository is also the polyseek plugin for ChatGPT: `.codex-plugin/plugin.json` is OpenAI's plugin manifest and points to the same skill and connector. It is submitted to the ChatGPT app directory as a ZIP on the OpenAI Platform; until it is listed, ChatGPT Business and Enterprise workspaces connect polyseek as a custom app with the URL `https://mcp.polyseek.ai/mcp` (developer mode, authentication OAuth).
+
+```
+zip -r polyseek-chatgpt-plugin.zip .codex-plugin .mcp.json skills assets README.md LICENSE
+```
+
 ## Use it
 
 1. Add the plugin and connect the polyseek connector from the plugin's **Connectors** tab. On Team and Enterprise plans an Owner adds the connector for the organization first.
