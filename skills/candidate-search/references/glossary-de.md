@@ -13,7 +13,7 @@ Use these terms when the consultant writes German. They are the words consultant
 | candidate search | Kandidatensuche |
 | search plan, search frame | Suchplan, Suchrahmen |
 | search lane | Suchweg |
-| depth: quick, standard, thorough | Suchtiefe: schnell, standard, gründlich |
+| depth: basic, standard, premium | Suchtiefe: basic, standard, premium |
 | longlist, shortlist | Longlist, Shortlist |
 | direct approach | Direktansprache |
 | fit, fit with deviation, exploratory | passt, passt mit Abweichung, explorativ |
