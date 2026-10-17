@@ -22,7 +22,7 @@ Do not hold up the search for optional details. If the consultant says "just sta
 
 ## 2. Plan and corrections
 
-Call `talent_landscape_plan` with the input, the briefing, the known candidates, the off-limits lists, the profile (`basic`, `standard` or `premium`) and `output_language` (`de` or `en`). A new plan takes 5 to 15 minutes. While it runs, the tool answers with a progress line: wait the given number of seconds and call `get_job_result`; never call `talent_landscape_plan` again for the same request.
+Call `talent_landscape_plan` with the input, the briefing, the known candidates, the off-limits lists, the profile (`basic`, `standard` or `premium`) and `output_language` (`de` or `en`). A new plan takes 10 to 20 minutes. While it runs, the tool answers with a progress line: wait the given number of seconds and call `get_job_result`; never call `talent_landscape_plan` again for the same request.
 
 Show the plan summary in full: the reading of the mandate, the search frame (titles, seniority, geography, must-haves, anchors) and the proposed search lanes. Ask for corrections. Pass corrections in plain words as `edits` to `talent_landscape_plan` with the plan, and show the revised plan.
 
@@ -32,7 +32,7 @@ Run the search only after the consultant has explicitly confirmed the current pl
 
 ## 4. Run
 
-Call `talent_landscape_run` with the plan. A search takes 15 to 50 minutes. Tell the consultant that it runs on polyseek's servers, that they can close the chat and that "Which searches have I run?" finds it later (`list_jobs`). While it runs, report the progress line when asked, waiting the given number of seconds between checks with `get_job_result`. Never start the run twice.
+Call `talent_landscape_run` with the plan. A search takes 30 to 60 minutes. Tell the consultant that it runs on polyseek's servers, that they can close the chat and that "Which searches have I run?" finds it later (`list_jobs`). While it runs, report the progress line when asked, waiting the given number of seconds between checks with `get_job_result`. Never start the run twice.
 
 ## 5. Present the result
 
