@@ -27,7 +27,7 @@ The connector also offers company profiles, person profiles, identifying the emp
 1. Add the plugin and connect the polyseek connector from the plugin's **Connectors** tab. On Team and Enterprise plans an Owner adds the connector for the organization first.
 2. Ask, for example: "Here is the job description for a Head of Finance at a family-owned industrial company in Styria. Plan a candidate search and show me the plan." Or in German: "Plane eine Kandidatensuche für diese CFO-Rolle und zeig mir den Plan."
 3. Correct the plan in plain words, confirm it, and read the result when the search has finished (30 to 60 minutes; it keeps running on polyseek's servers if you close the chat).
-4. Ask "What can polyseek do?" or "Wie viele Suchen habe ich noch?" for a guide, your search depths and your remaining allowance.
+4. Ask "What can polyseek do?" or "Wie viele Credits haben wir noch?" for a guide, your search depths and your firm's credit balance. Paid actions draw credits from your firm's balance; the price of a search run is shown with the plan before you confirm it.
 
 Every candidate list is research from public sources, verified per candidate. Check each candidate before an approach. polyseek never contacts candidates.
 

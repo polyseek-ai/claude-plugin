@@ -28,7 +28,7 @@ Show the plan summary in full: the reading of the mandate, the search frame (tit
 
 ## 3. Confirmation
 
-Run the search only after the consultant has explicitly confirmed the current plan and the depth, for example "Run it" or "Starte die Suche". A correction is not a confirmation; show the revised plan first. If the depth is not allowed for this consultant, the tool says which depths are; offer those.
+Run the search only after the consultant has explicitly confirmed the current plan and the depth, for example "Run it" or "Starte die Suche". A correction is not a confirmation; show the revised plan first. When asking for the confirmation, name the price of the run in credits and the firm's credit balance from the plan answer (`credits`). If the depth is not allowed for this consultant, the tool says which depths are; offer those.
 
 ## 4. Run
 
@@ -50,15 +50,19 @@ When the consultant wants more or different candidates, names good examples, rej
 Contacts are for candidates the consultant has chosen, never for the whole list by default.
 
 1. Ask which candidates, by rank or name, unless the consultant already said.
-2. Call `enrich_contact` with those candidates of the search (candidate and result) so the contacts are stored with the search and appear in its pages and downloads. Up to 50 people per request; each request counts as one research job against the allowance. Email by default; phone only if the consultant asks and the firm allows it.
+2. Call `enrich_contact` with those candidates of the search (candidate and result) so the contacts are stored with the search and appear in its pages and downloads. Up to 50 people per request; each person costs credits, and persons without a verified email or phone are refunded. Email by default; phone only if the consultant asks and the firm allows it.
 3. Report per candidate: verified email, verified phone, not found, or skipped because of the firm's policy.
 4. Contact details stay internal to the consultant's firm. polyseek never contacts anyone. Draft an approach message only when asked, and leave sending to the consultant.
 
+## Credits
+
+Paid actions draw credits from the firm's balance: a new plan, each search run (by depth), company and person profiles, the employer behind a posting, and contacts per person found. Plan corrections and second-pass preparations are free; failed or cancelled work is refunded. Talk about credits only, never about money. `credit_history` lists the consultant's own bookings; the firm's bookings only for consultants with that permission.
+
 ## Errors
 
-- `quota_exceeded`: tell the consultant whose allowance is used up, the limit and the day from which a new start is possible; results and downloads stay available; do not retry.
+- `credits_exhausted`: tell the consultant the balance and the price of the action; nothing was started or debited, results and downloads stay available, polyseek tops up credits on request; do not retry.
 - `forbidden` for a depth: offer the allowed depths.
 - `not_found`: the search or plan belongs to someone else or does not exist; use `list_jobs` to find the consultant's own work.
 - Anything else: say what failed in one sentence and offer to try once more.
 
-For questions about polyseek itself, its depths or the remaining allowance, use `polyseek_guide`.
+For questions about polyseek itself, its depths or the credit balance, use `polyseek_guide`; for what something cost, use `credit_history`.

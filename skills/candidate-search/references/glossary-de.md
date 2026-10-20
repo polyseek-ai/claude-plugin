@@ -26,4 +26,6 @@ Use these terms when the consultant writes German. They are the words consultant
 | tenure | Verweildauer, Betriebszugehörigkeit |
 | seniority | Seniorität, Führungsebene |
 | verified business contact | verifizierter geschäftlicher Kontakt |
-| allowance | Kontingent |
+| credits | Credits |
+| credit balance | Credit-Guthaben |
+| booking | Buchung |
