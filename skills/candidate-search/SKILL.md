@@ -24,7 +24,7 @@ Do not hold up the search for optional details. If the consultant says "just sta
 
 Call `talent_landscape_plan` with the input, the briefing, the known candidates, the off-limits lists, the profile (`basic`, `standard` or `premium`) and `output_language` (`de` or `en`). A new plan takes 10 to 20 minutes. While it runs, the tool answers with a progress line: wait the given number of seconds and call `get_job_result`; never call `talent_landscape_plan` again for the same request.
 
-Show the plan summary in full: the reading of the mandate, the search frame (titles, seniority, geography, must-haves, anchors) and the proposed search lanes. Ask for corrections. Pass corrections in plain words as `edits` to `talent_landscape_plan` with the plan, and show the revised plan.
+Show the plan summary in full: the reading of the mandate, the search frame (titles, seniority, geography, must-haves, anchors) and the proposed search lanes. Ask for corrections. Pass corrections in plain words as `edits` to `talent_landscape_plan` with the plan, and show the revised plan. Every kind of correction goes to the same plan, mixed in one text if the consultant gives several: criteria, regions, work model, off-limits companies, named companies or titles to add, competitors of the client or other groups of companies. A different depth before the first run goes to the same plan as `profile`. Never start a new plan for a correction. Only when the answer lists a correction under `needs_new_plan` (another role, another client, another location) tell the consultant that this needs a new plan and start one with the changed briefing after they agree. When the answer lists `overrides`, say which requirements of the mandate the plan now deviates from.
 
 ## 3. Confirmation
 
