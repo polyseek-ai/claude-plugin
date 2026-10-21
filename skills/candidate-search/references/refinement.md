@@ -25,4 +25,4 @@ Turn what the consultant says into these parts, and ask only for what is unclear
 3. Wait for the consultant's explicit confirmation, then call `talent_landscape_run` with the plan, as in the first pass.
 4. Present the new result. Point out which candidates are new in this version.
 
-Each second pass counts as a research job, and its run as a new search, against the allowance.
+Preparing a second pass is free; its run costs the credits of its depth. Name that price and the balance (`credits` in the new plan version) when asking for the confirmation.
