@@ -39,9 +39,10 @@ Call `talent_landscape_run` with the plan. A search takes 30 to 60 minutes. Tell
 ## 5. Present the result
 
 1. The summary first: number of candidates, how many fit and how many fit with a deviation, the main assumptions and warnings. If the result is marked incomplete (`validation.valid` false or `raw_output`), say so and treat it as a draft.
-2. Then the first page of candidates as a table: rank, name, current role, employer, location, fit (fit, fit with deviation, exploratory), the main reason and the main deviation. Use only what the tool returned; never add facts.
-3. Offer the next steps in one line each: further pages, full details of chosen candidates with sources, coverage per search lane, assumptions, downloads (CSV and JSON; links expire after 15 minutes, `section: "downloads"` renews them), a second pass, verified contacts.
-4. Remind once that every candidate is research from public sources and must be checked before an approach.
+2. Then call `show_candidates` with the result, after every finished run, also after a second pass. In clients that show apps it displays every candidate as a table in the chat: rank, name, position, employer, location, tier, category, evidenced must-haves, profile links and contact data, with filters and the details of each candidate. Do not repeat the list then; name how many candidates the table holds and how they spread over the tiers. Follow the message of its answer.
+3. Where no table appears (the answer says so, or the consultant does), show the first page of candidates as a table instead: rank, name, current role, employer, location, fit (fit, fit with deviation, exploratory), the main reason and the main deviation. Use only what the tool returned; never add facts.
+4. Offer the next steps in one line each: full details of chosen candidates with sources, coverage per search lane, assumptions, downloads (CSV and JSON; links expire after 15 minutes, `section: "downloads"` renews them), a second pass, verified contacts; without the table also further pages.
+5. Remind once that every candidate is research from public sources and must be checked before an approach.
 
 ## 6. Second pass
 
