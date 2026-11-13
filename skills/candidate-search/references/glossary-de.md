@@ -12,11 +12,14 @@ Use these terms when the consultant writes German. They are the words consultant
 | briefing | Briefing |
 | candidate search | Kandidatensuche |
 | search plan, search frame | Suchplan, Suchrahmen |
+| target company list, origin area | Zielfirmenliste, Herkunftsbereich |
 | search lane | Suchweg |
 | depth: basic, standard, premium | Suchtiefe: basic, standard, premium |
 | longlist, shortlist | Longlist, Shortlist |
 | direct approach | Direktansprache |
-| fit, fit with deviation, exploratory | passt, passt mit Abweichung, explorativ |
+| category: fit, reserve, exploratory | Einordnung: passend, Reserve, explorativ |
+| tier (A to D) | Tier (A bis D) |
+| speaks for, speaks against, not evidenced | spricht dafür, spricht dagegen, nicht belegt |
 | must-have, nice-to-have | Muss-Kriterium, Kann-Kriterium |
 | off-limits | Off-Limits |
 | benchmark candidate | Benchmark-Kandidat |
@@ -29,3 +32,4 @@ Use these terms when the consultant writes German. They are the words consultant
 | credits | Credits |
 | credit balance | Credit-Guthaben |
 | booking | Buchung |
+| buy credits | Credits kaufen |
