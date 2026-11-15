@@ -1,6 +1,6 @@
 # polyseek for Claude
 
-Run executive-search candidate searches in Claude with [polyseek](https://polyseek.ai). The plugin pairs the polyseek connector with a skill that guides Claude through the consultant's workflow: take the briefing, show the search plan for corrections, run the search only after your confirmation, present the ranked and verified candidates, refine them in a second pass and get verified business contacts for the candidates you choose. It works in German and English.
+Run executive-search candidate searches in Claude with [polyseek](https://polyseek.ai). The plugin pairs the polyseek connector with a skill that guides Claude through the consultant's workflow: take the briefing, show the search plan for corrections, run the search only after your confirmation, present the ranked and verified candidates, refine them in a second pass and get contact details for the candidates you choose (business email, and mobile number and private email where your firm has enabled them). It works in German and English.
 
 Access to polyseek is by request only, for executive-search firms; polyseek sets up every account personally. You need a personal polyseek access code; firms without one can request access on the sign-in screen when they connect.
 
@@ -9,7 +9,7 @@ Access to polyseek is by request only, for executive-search firms; polyseek sets
 | Part | What it does |
 | --- | --- |
 | Connector `polyseek` (`.mcp.json`) | Connects Claude to the polyseek MCP server at `https://mcp.polyseek.ai/mcp`. You sign in once with your personal polyseek access code (OAuth). |
-| Skill `candidate-search` | The candidate search workflow: briefing, plan, corrections, confirmation, run, result, second pass, verified contacts. It asks for what a short briefing leaves open before it plans, points out what decides the result when it shows the plan, and reads every candidate with what speaks for and against and what no source evidences. Loaded when you ask for a candidate search, a longlist, a second pass or contacts for candidates, in German or English. In Claude Code and Cowork you can also start it with `/polyseek:candidate-search`. |
+| Skill `candidate-search` | The candidate search workflow: briefing, plan, corrections, confirmation, run, result, second pass, contact details. It asks for what a short briefing leaves open before it plans, points out what decides the result when it shows the plan, and reads every candidate with what speaks for and against and what no source evidences. Loaded when you ask for a candidate search, a longlist, a second pass or contacts for candidates, in German or English. In Claude Code and Cowork you can also start it with `/polyseek:candidate-search`. |
 
 The connector also offers company profiles, person profiles, identifying the employer behind an anonymous job posting, earlier work and a guide to polyseek; Claude uses them directly from the connector.
 
