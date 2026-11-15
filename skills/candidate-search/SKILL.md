@@ -1,6 +1,6 @@
 ---
 name: candidate-search
-description: Run an executive-search candidate search with the polyseek connector, from the briefing to a ranked, verified candidate list, a second pass and verified contacts. Use when a consultant asks to find, map or research candidates for a mandate or role, build a longlist or talent landscape, correct or confirm a search plan, check the target company list of a search, read the result of a search or what speaks for and against one of its candidates, refine a search with benchmarks or rejections, or get contact details for chosen candidates. German requests count too, for example Kandidatensuche, Kandidaten finden, Longlist, Talent Landscape, Suchauftrag, Mandat besetzen, Suchplan korrigieren, Zielfirmenliste, Ergebnis der Suche, was spricht für und gegen einen Kandidaten, zweiter Durchlauf, Benchmark-Kandidat, Kandidat ablehnen, Kontaktdaten der Kandidaten.
+description: Run an executive-search candidate search with the polyseek connector, from the briefing to a ranked, verified candidate list, a second pass and contact details. Use when a consultant asks to find, map or research candidates for a mandate or role, build a longlist or talent landscape, correct or confirm a search plan, check the target company list of a search, read the result of a search or what speaks for and against one of its candidates, refine a search with benchmarks or rejections, or get contact details for chosen candidates. German requests count too, for example Kandidatensuche, Kandidaten finden, Longlist, Talent Landscape, Suchauftrag, Mandat besetzen, Suchplan korrigieren, Zielfirmenliste, Ergebnis der Suche, was spricht für und gegen einen Kandidaten, zweiter Durchlauf, Benchmark-Kandidat, Kandidat ablehnen, Kontaktdaten der Kandidaten.
 ---
 
 # Candidate search with polyseek
@@ -69,21 +69,26 @@ Stop a running search with `cancel_job` only when the consultant says they no lo
 2. Then call `show_candidates` with the result, after every finished run, also after a second pass. In clients that show apps it displays every candidate as a table in the chat: rank, name, position, employer, location, tier, category, evidenced must-haves, profile links and contact data, with filters and the details of each candidate. Do not repeat the list then; name how many candidates the table holds and how they spread over the tiers. Follow the message of its answer. Where a count still names a category by the key `fit_with_deviation`, that is the reserve category: say reserve, never the key.
 3. Where no table appears (the answer says so, or the consultant does), show the first page of candidates as a table instead: rank, name, current role, employer, location, category (fit, reserve, exploratory), the main reason and the main deviation. Use only what the tool returned; never add facts.
 4. For candidates the consultant asks about, read the details (`talent_landscape_result`, section `candidate_detail`) and keep their three parts apart: what speaks for the candidate and what speaks against, each point with the link to its source and the day it was checked, and what no source evidences. Present the third part as points to clarify in the first interview, never as a weakness and never as a fact. A verification that stayed unresolved belongs there too: it says that no source confirmed the candidate's identity or current role yet, not that something speaks against them. Where an answer still shows a status or a flag as a key (for example `unresolved`, `recent_move`), say what it means in words.
-5. Recommend one next step from the summary's next actions, in the consultant's words, and say why (for example unresolved verifications, a search route not yet run, few fit candidates, open questions for the client). Then offer the others in one line each: details of chosen candidates, coverage per search lane and per target company, assumptions, downloads (CSV and JSON; links expire after 15 minutes, `section: "downloads"` renews them), a second pass, verified contacts; without the table also further pages.
+5. Recommend one next step from the summary's next actions, in the consultant's words, and say why (for example unresolved verifications, a search route not yet run, few fit candidates, open questions for the client). Then offer the others in one line each: details of chosen candidates, coverage per search lane and per target company, assumptions, downloads (CSV and JSON; links expire after 15 minutes, `section: "downloads"` renews them), a second pass, contact details; without the table also further pages.
 6. Remind once that every candidate is research from public sources and must be checked before an approach.
 
 ## 6. Second pass
 
 When the consultant wants more or different candidates, names good examples, rejects candidates or wants a wider frame, follow `references/refinement.md`.
 
-## 7. Verified contacts
+## 7. Contact details
 
 Contacts are for candidates the consultant has chosen, never for the whole list by default.
 
 1. Ask which candidates, by rank or name, unless the consultant already said. A request that names the candidates is the go-ahead: look them up without asking again.
-2. Call `enrich_contact` with those candidates of the search (candidate and result) so the contacts are stored with the search and appear in its pages and downloads. Up to 50 people per request; each person costs credits, and persons without an email or phone found are refunded. Email by default; phone only if the consultant asks and the firm allows it.
-3. Report per candidate what the answer says: a verified email, an email found that could not be verified (say so; it needs a check before use), a phone number found, nothing found, skipped because of the firm's policy, or a failed lookup (offer to try those persons once more).
-4. Contact details stay internal to the consultant's firm. polyseek never contacts anyone. Draft an approach message only when asked, and leave sending to the consultant.
+2. Call `enrich_contact` with those candidates of the search (candidate and result) so the contacts are stored with the search and appear in its pages and downloads. Up to 50 people per request; each person costs credits, and persons for whom nothing is found are refunded. Without `channels` polyseek looks up every channel the firm allows: the business email, and the mobile number and the private email where the firm has enabled them. Pass `channels` only when the consultant wants fewer, for example the business email alone. Which channels the firm allows says `polyseek_guide` (topic `contacts`).
+3. A lookup runs on polyseek's servers and usually takes a few minutes; it can take considerably longer. While it runs, the tool answers with a progress line: wait the given number of seconds and call `get_job_result`. Never call `enrich_contact` again for the same people while their lookup runs.
+4. Report per candidate what the answer says, channel by channel:
+   - the business email: verified, or found but not verified (say so; it needs a check before use)
+   - the mobile number
+   - the private email, named as private: verified or not verified
+   - nothing found, a channel the firm's policy does not allow, or a failed lookup (offer to try those persons once more)
+5. Contact details stay internal to the consultant's firm. polyseek never contacts anyone. Draft an approach message only when asked, and leave sending to the consultant.
 
 ## Credits
 

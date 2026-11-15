@@ -11,7 +11,7 @@
     {
       "name": "polyseek",
       "source": "./",
-      "description": "Executive-search candidate searches in Claude with polyseek: briefing, plan, confirmation, run, ranked and verified candidates, second pass and verified contacts. German and English.",
+      "description": "Executive-search candidate searches in Claude with polyseek: briefing, plan, confirmation, run, ranked and verified candidates, second pass and contact details. German and English.",
       "category": "productivity",
       "homepage": "https://polyseek.ai"
     }

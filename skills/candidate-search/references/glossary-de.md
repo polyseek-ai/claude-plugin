@@ -28,7 +28,9 @@ Use these terms when the consultant writes German. They are the words consultant
 | notice period | Kündigungsfrist |
 | tenure | Verweildauer, Betriebszugehörigkeit |
 | seniority | Seniorität, Führungsebene |
-| verified business contact | verifizierter geschäftlicher Kontakt |
+| contact details | Kontaktdaten |
+| business email, mobile number, private email | geschäftliche E-Mail, Mobilnummer, private E-Mail |
+| verified, not verified (email) | verifiziert, nicht verifiziert |
 | credits | Credits |
 | credit balance | Credit-Guthaben |
 | booking | Buchung |
