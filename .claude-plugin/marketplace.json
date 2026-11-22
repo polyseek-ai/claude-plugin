@@ -5,13 +5,13 @@
     "email": "office@polyseek.ai"
   },
   "metadata": {
-    "description": "The polyseek plugin for Claude: executive-search candidate searches with the polyseek connector."
+    "description": "The polyseek plugin for Claude: executive-search candidate searches and market signals with the polyseek connector."
   },
   "plugins": [
     {
       "name": "polyseek",
       "source": "./",
-      "description": "Executive-search candidate searches in Claude with polyseek: briefing, plan, confirmation, run, ranked and verified candidates, second pass and contact details. German and English.",
+      "description": "Executive-search research in Claude with polyseek: candidate searches from briefing to verified candidates and contact details, and market signals as occasions for a search. German and English.",
       "category": "productivity",
       "homepage": "https://polyseek.ai"
     }

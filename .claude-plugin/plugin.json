@@ -1,8 +1,8 @@
 {
   "name": "polyseek",
   "displayName": "polyseek",
-  "version": "0.1.10",
-  "description": "Executive-search candidate searches in Claude with polyseek: brief the mandate, review and confirm the search plan, run the search, read the ranked and verified candidates, refine them in a second pass and get contact details for chosen candidates. German and English. Access on request.",
+  "version": "0.2.0",
+  "description": "Executive-search research in Claude with polyseek: candidate searches (brief the mandate, review and confirm the search plan, run the search, read the ranked and verified candidates, refine them, get contact details) and market signals (occasions for a search at companies, also as a weekly overview). German and English. Access on request.",
   "author": {
     "name": "int32 solutions GmbH (polyseek.ai)",
     "email": "office@polyseek.ai",
@@ -19,6 +19,8 @@
     "talent landscape",
     "longlist",
     "headhunting",
-    "Personalberatung"
+    "Personalberatung",
+    "market signals",
+    "business development"
   ]
 }
