@@ -11,7 +11,7 @@
     {
       "name": "polyseek",
       "source": "./",
-      "description": "Executive-search research in Claude with polyseek: candidate searches from briefing to verified candidates and contact details, and market signals as occasions for a search. German and English.",
+      "description": "Executive-search research in Claude with polyseek: candidate searches from briefing to verified candidates and contact details, and market signals for business development. German and English.",
       "category": "productivity",
       "homepage": "https://polyseek.ai"
     }
