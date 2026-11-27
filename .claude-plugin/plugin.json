@@ -1,7 +1,7 @@
 {
   "name": "polyseek",
   "displayName": "polyseek",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Executive-search research in Claude with polyseek: candidate searches (brief the mandate, review and confirm the search plan, run the search, read the ranked and verified candidates, refine them, get contact details) and market signals for business development (companies where a reported event likely creates a need for executive search, also as a weekly overview). German and English. Access on request.",
   "author": {
     "name": "int32 solutions GmbH (polyseek.ai)",
